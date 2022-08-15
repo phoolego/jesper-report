@@ -1,0 +1,483 @@
+<jasperReport
+xmlns="http://jasperreports.sourceforge.net/jasperreports"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports
+http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+name="report2" pageWidth="595" pageHeight="842"
+columnWidth="555" leftMargin="20" rightMargin="20"
+topMargin="20" bottomMargin="20"
+>
+    <style name="Base" isDefault="true" fontSize="12" fontName="Cordia New"/>
+    <field name="channelType" class="java.lang.String">
+        <fieldDescription><![CDATA[channelType]]></fieldDescription>
+    </field>
+    <field name="inputSource" class="java.lang.String">
+        <fieldDescription><![CDATA[inputSource]]></fieldDescription>
+    </field>
+    <field name="acuConsent" class="java.lang.String">
+        <fieldDescription><![CDATA[acuConsent]]></fieldDescription>
+    </field>
+    <field name="acuSource" class="java.lang.String">
+        <fieldDescription><![CDATA[acuSource]]></fieldDescription>
+    </field>
+    <field name="sellerName" class="java.lang.String">
+        <fieldDescription><![CDATA[sellerName]]></fieldDescription>
+    </field>
+    <field name="sellerId" class="java.lang.String">
+        <fieldDescription><![CDATA[sellerId]]></fieldDescription>
+    </field>
+    <field name="branch" class="java.lang.String">
+        <fieldDescription><![CDATA[branch]]></fieldDescription>
+    </field>
+    <field name="comId" class="java.lang.String">
+        <fieldDescription><![CDATA[comId]]></fieldDescription>
+    </field>
+    <field name="packageCode" class="java.lang.String">
+        <fieldDescription><![CDATA[packageCode]]></fieldDescription>
+    </field>
+    <field name="campaignCode" class="java.lang.String">
+        <fieldDescription><![CDATA[campaignCode]]></fieldDescription>
+    </field>
+    <field name="dseRefNo" class="java.lang.String">
+        <fieldDescription><![CDATA[dseRefNo]]></fieldDescription>
+    </field>
+    <field name="isPersonalCash" class="java.lang.Boolean">
+        <fieldDescription><![CDATA[isPersonalCash]]></fieldDescription>
+    </field>
+    <field name="cashAmount" class="java.lang.Integer">
+        <fieldDescription><![CDATA[cashAmount]]></fieldDescription>
+    </field>
+    <field name="debtDuration" class="java.lang.Integer">
+        <fieldDescription><![CDATA[debtDuration]]></fieldDescription>
+    </field>
+    <field name="clientNameTH" class="java.lang.String">
+        <fieldDescription><![CDATA[clientNameTH]]></fieldDescription>
+    </field>
+    <field name="clientNameEN" class="java.lang.String">
+        <fieldDescription><![CDATA[clientNameEN]]></fieldDescription>
+    </field>
+    <field name="cid" class="java.lang.String">
+        <fieldDescription><![CDATA[cid]]></fieldDescription>
+    </field>
+    <field name="cidExpire" class="java.lang.String">
+        <fieldDescription><![CDATA[cidExpire]]></fieldDescription>
+    </field>
+    <field name="birthDate" class="java.lang.String">
+        <fieldDescription><![CDATA[birthDate]]></fieldDescription>
+    </field>
+    <field name="nationality" class="java.lang.String">
+        <fieldDescription><![CDATA[nationality]]></fieldDescription>
+    </field>
+    <field name="relation" class="java.lang.String">
+        <fieldDescription><![CDATA[relation]]></fieldDescription>
+    </field>
+    <field name="address" class="java.lang.String">
+        <fieldDescription><![CDATA[address]]></fieldDescription>
+    </field>
+    <field name="address.addressNumber" class="java.lang.String">
+        <fieldDescription><![CDATA[address.addressNumber]]></fieldDescription>
+    </field>
+    <field name="address.roomNumber" class="java.lang.String">
+        <fieldDescription><![CDATA[address.roomNumber]]></fieldDescription>
+    </field>
+    <field name="address.building" class="java.lang.String">
+        <fieldDescription><![CDATA[address.building]]></fieldDescription>
+    </field>
+    <field name="address.floor" class="java.lang.String">
+        <fieldDescription><![CDATA[address.floor]]></fieldDescription>
+    </field>
+    <field name="address.mhu" class="java.lang.String">
+        <fieldDescription><![CDATA[address.mhu]]></fieldDescription>
+    </field>
+    <field name="address.soi" class="java.lang.String">
+        <fieldDescription><![CDATA[address.soi]]></fieldDescription>
+    </field>
+    <field name="address.road" class="java.lang.String">
+        <fieldDescription><![CDATA[address.road]]></fieldDescription>
+    </field>
+    <field name="address.subDistrict" class="java.lang.String">
+        <fieldDescription><![CDATA[address.subDistrict]]></fieldDescription>
+    </field>
+    <field name="address.district" class="java.lang.String">
+        <fieldDescription><![CDATA[address.district]]></fieldDescription>
+    </field>
+    <field name="address.province" class="java.lang.String">
+        <fieldDescription><![CDATA[address.province]]></fieldDescription>
+    </field>
+    <field name="address.zipCode" class="java.lang.String">
+        <fieldDescription><![CDATA[address.zipCode]]></fieldDescription>
+    </field>
+    <field name="phone" class="java.lang.String">
+        <fieldDescription><![CDATA[phone]]></fieldDescription>
+    </field>
+    <field name="mobile" class="java.lang.String">
+        <fieldDescription><![CDATA[mobile]]></fieldDescription>
+    </field>
+    <field name="email" class="java.lang.String">
+        <fieldDescription><![CDATA[email]]></fieldDescription>
+    </field>
+    <field name="shippingAddress" class="java.lang.String">
+        <fieldDescription><![CDATA[shippingAddress]]></fieldDescription>
+    </field>
+    <field name="shippingAddress.addressNumber" class="java.lang.String">
+        <fieldDescription><![CDATA[shippingAddress.addressNumber]]></fieldDescription>
+    </field>
+    <field name="shippingAddress.roomNumber" class="java.lang.String">
+        <fieldDescription><![CDATA[shippingAddress.roomNumber]]></fieldDescription>
+    </field>
+    <field name="shippingAddress.building" class="java.lang.String">
+        <fieldDescription><![CDATA[shippingAddress.building]]></fieldDescription>
+    </field>
+    <field name="shippingAddress.floor" class="java.lang.String">
+        <fieldDescription><![CDATA[shippingAddress.floor]]></fieldDescription>
+    </field>
+    <field name="shippingAddress.mhu" class="java.lang.String">
+        <fieldDescription><![CDATA[shippingAddress.mhu]]></fieldDescription>
+    </field>
+    <field name="shippingAddress.soi" class="java.lang.String">
+        <fieldDescription><![CDATA[shippingAddress.soi]]></fieldDescription>
+    </field>
+    <field name="shippingAddress.road" class="java.lang.String">
+        <fieldDescription><![CDATA[shippingAddress.road]]></fieldDescription>
+    </field>
+    <field name="shippingAddress.subDistrict" class="java.lang.String">
+        <fieldDescription><![CDATA[shippingAddress.subDistrict]]></fieldDescription>
+    </field>
+    <field name="shippingAddress.district" class="java.lang.String">
+        <fieldDescription><![CDATA[shippingAddress.district]]></fieldDescription>
+    </field>
+    <field name="shippingAddress.province" class="java.lang.String">
+        <fieldDescription><![CDATA[shippingAddress.province]]></fieldDescription>
+    </field>
+    <field name="shippingAddress.zipCode" class="java.lang.String">
+        <fieldDescription><![CDATA[shippingAddress.zipCode]]></fieldDescription>
+    </field>
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+    <title>
+        <band height="100" splitType="Stretch">
+            <rectangle>
+                <reportElement mode="Transparent" x="420" y="0" width="135" height="50" uuid="35bbaaac-ce4f-46f3-8561-43ebd6bc7588">
+                    <property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineColor="#B5B3B3"/>
+                </graphicElement>
+            </rectangle>
+            <textField>
+                <reportElement x="420" y="0" width="135" height="12" forecolor="#030000" uuid="d6e36b19-2b6f-4a0c-917a-c7c402a7a8db">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <box topPadding="0" leftPadding="5" bottomPadding="0" rightPadding="0"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA["ChannelType: "+$F{channelType}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="420" y="12" width="135" height="12" forecolor="#030000" uuid="27e06460-3793-4dd3-ab51-a25f8722e4c1">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <box topPadding="0" leftPadding="5" bottomPadding="0" rightPadding="0"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA["Input Source: "+$F{inputSource}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="420" y="24" width="135" height="12" forecolor="#030000" uuid="7b85a476-9fb4-4c6d-979b-464e3f3bd8e0">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <box topPadding="0" leftPadding="5" bottomPadding="0" rightPadding="0"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA["ACU Consent: "+$F{acuConsent}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="420" y="36" width="135" height="12" forecolor="#030000" uuid="6f118df2-4831-4ab9-9c6d-8e930bbd5b90">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <box topPadding="0" leftPadding="5" bottomPadding="0" rightPadding="0"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA["ACU Source: "+$F{acuSource}]]></textFieldExpression>
+            </textField>
+            <image>
+                <reportElement x="0" y="0" width="100" height="48" uuid="14ebb1a5-cfa7-4c5f-9948-298f61009e4b"/>
+                <imageExpression><![CDATA["/Users/5369057/Documents/example_doc/cimb_logo.png"]]></imageExpression>
+            </image>
+            <staticText>
+                <reportElement x="0" y="50" width="419" height="30" uuid="8d89ceef-1bf5-439c-adcc-12ba46f8de09"/>
+                <textElement verticalAlignment="Bottom">
+                    <font size="16"/>
+                </textElement>
+                <text><![CDATA[ใบคำขอใช้บริการ / สัญญาสินเชื่อส่วนบุคคล เพื่ออนุมัติเบื้องต้น]]></text>
+            </staticText>
+        </band>
+    </title>
+    <pageHeader>
+        <band height="30" splitType="Stretch">
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <staticText>
+                <reportElement x="0" y="0" width="555" height="30" forecolor="#696969" uuid="aca641da-a53c-4d5c-8ae4-dec4fe397133"/>
+                <textElement verticalAlignment="Middle"/>
+                <text><![CDATA["ข้อมูลจากบัตรประจำตัวประชาชน Thai National ID Card นี้ใช้สำหรับการทำธุรกรรมสินเชิ่อผ่านช่องทางอิเล็กทรอนิกส์ กับ ธนาคารซีไอเอ็มบี ไทย จำกัด(มหาชน) เท่านั้น"]]></text>
+            </staticText>
+        </band>
+    </pageHeader>
+    <detail>
+        <band height="220" splitType="Prevent">
+            <frame>
+                <reportElement x="0" y="0" width="555" height="75" uuid="7cfc68b6-afc4-449c-8d85-0f192e32b53c">
+                    <property name="com.jaspersoft.studio.element.name" value="section1"/>
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <box>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#B5B3B3"/>
+                </box>
+                <staticText>
+                    <reportElement mode="Opaque" x="3" y="0" width="552" height="20" backcolor="#F7CECD" uuid="abea8505-d546-4309-b93d-e11c48e67164">
+                        <property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+                    </reportElement>
+                    <box leftPadding="15">
+                        <leftPen lineWidth="5.0" lineStyle="Solid" lineColor="#FF0000"/>
+                    </box>
+                    <textElement verticalAlignment="Middle">
+                        <font size="14"/>
+                    </textElement>
+                    <text><![CDATA[ใบคำขอใช้บริการ/สัญญาสินเชื่อส่วนบุคคล เพื่ออนุมัติเบื้องต้น]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement mode="Opaque" x="0" y="25" width="277" height="15" uuid="dbf56a13-138c-46db-871f-6a66d9726c57">
+                        <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                    </reportElement>
+                    <textElement verticalAlignment="Middle"/>
+                    <text><![CDATA[(สำหรับเจ้าหน้าที่ธนาคาร)]]></text>
+                </staticText>
+                <textField>
+                    <reportElement mode="Opaque" x="277" y="25" width="278" height="15" uuid="1ade4906-4393-480a-b334-7ed3ed61f55f">
+                        <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                    </reportElement>
+                    <textElement verticalAlignment="Middle"/>
+                    <textFieldExpression><![CDATA["CIMB@Work Company : "+$F{comId}]]></textFieldExpression>
+                </textField>
+                <textField>
+                    <reportElement mode="Opaque" x="0" y="40" width="277" height="15" uuid="172c18d8-7e01-4488-82a3-8cb01ce475d8">
+                        <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                    </reportElement>
+                    <textElement verticalAlignment="Middle"/>
+                    <textFieldExpression><![CDATA["สำนักงานใหญ่ : "+$F{branch}]]></textFieldExpression>
+                </textField>
+                <textField>
+                    <reportElement mode="Opaque" x="277" y="40" width="139" height="15" uuid="80d8284a-4e4a-4e2d-ac5a-079efa8eb78d">
+                        <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                    </reportElement>
+                    <textElement verticalAlignment="Middle"/>
+                    <textFieldExpression><![CDATA["Package Code : "+$F{packageCode}]]></textFieldExpression>
+                </textField>
+                <textField>
+                    <reportElement mode="Opaque" x="416" y="40" width="139" height="15" uuid="7a63d7c7-db0b-47f1-93bb-4121b05489ad">
+                        <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                    </reportElement>
+                    <textElement verticalAlignment="Middle"/>
+                    <textFieldExpression><![CDATA["Campaign Code : "+$F{campaignCode}]]></textFieldExpression>
+                </textField>
+                <textField>
+                    <reportElement mode="Opaque" x="0" y="55" width="138" height="15" uuid="29a4be4a-7d66-4ad1-ac1d-42bc91bd82ed">
+                        <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                    </reportElement>
+                    <textElement verticalAlignment="Middle"/>
+                    <textFieldExpression><![CDATA["ชื่อผู้ขาย : "+$F{sellerName}]]></textFieldExpression>
+                </textField>
+                <textField>
+                    <reportElement mode="Opaque" x="138" y="55" width="139" height="15" uuid="d60c8e0c-efdd-47f6-b1a3-52cd6a51e9f5">
+                        <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                    </reportElement>
+                    <textElement verticalAlignment="Middle"/>
+                    <textFieldExpression><![CDATA["รหัสผู้ขาย : "+$F{sellerId}]]></textFieldExpression>
+                </textField>
+                <textField>
+                    <reportElement mode="Opaque" x="277" y="55" width="278" height="15" uuid="c07c4646-51c0-45c7-9b9a-3d6657c476d1">
+                        <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                    </reportElement>
+                    <textElement verticalAlignment="Middle"/>
+                    <textFieldExpression><![CDATA["DES Reference No. : "+$F{dseRefNo}]]></textFieldExpression>
+                </textField>
+            </frame>
+            <frame>
+                <reportElement x="0" y="85" width="555" height="90" uuid="47c56bb7-488e-4749-9c5f-dfa96682f776">
+                    <property name="com.jaspersoft.studio.element.name" value="section4"/>
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                </reportElement>
+                <staticText>
+                    <reportElement mode="Opaque" x="3" y="0" width="552" height="20" backcolor="#F7CECD" uuid="cac296ae-3087-4538-9679-f61bc0ee8ec0">
+                        <property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+                    </reportElement>
+                    <box leftPadding="15">
+                        <leftPen lineWidth="5.0" lineStyle="Solid" lineColor="#FF0000"/>
+                    </box>
+                    <textElement verticalAlignment="Middle">
+                        <font size="14"/>
+                    </textElement>
+                    <text><![CDATA[ที่อยู่ตามบัตรประชาชน]]></text>
+                </staticText>
+                <textField>
+                    <reportElement mode="Opaque" x="0" y="25" width="92" height="15" uuid="7e330736-6cd9-4e3f-b23d-89cfd4874d72">
+                        <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                    </reportElement>
+                    <textElement verticalAlignment="Middle"/>
+                    <textFieldExpression><![CDATA["เลขที่ : "+$F{address.addressNumber}]]></textFieldExpression>
+                </textField>
+                <textField>
+                    <reportElement mode="Opaque" x="92" y="25" width="93" height="15" uuid="f23d513f-ccbb-4ebb-ba08-ae4f2d6aaaeb">
+                        <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                    </reportElement>
+                    <textElement verticalAlignment="Middle"/>
+                    <textFieldExpression><![CDATA["เลขที่ห้อง : "+$F{address.roomNumber}]]></textFieldExpression>
+                </textField>
+                <textField>
+                    <reportElement mode="Opaque" x="185" y="25" width="185" height="15" uuid="dcf9e7c9-67ea-41aa-840e-7947afdf0017">
+                        <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                    </reportElement>
+                    <textElement verticalAlignment="Middle"/>
+                    <textFieldExpression><![CDATA["หมู่บ้าน/อาคาร : "+$F{address.building}]]></textFieldExpression>
+                </textField>
+                <textField>
+                    <reportElement mode="Opaque" x="370" y="25" width="185" height="15" uuid="944b515c-def4-44c0-b110-9926a88d5120">
+                        <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                    </reportElement>
+                    <textElement verticalAlignment="Middle"/>
+                    <textFieldExpression><![CDATA["เลขที่ชั้น : "+$F{address.floor}]]></textFieldExpression>
+                </textField>
+                <textField>
+                    <reportElement mode="Opaque" x="0" y="40" width="92" height="15" uuid="7049059d-38f1-4139-b818-28b59d991307">
+                        <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                    </reportElement>
+                    <textElement verticalAlignment="Middle"/>
+                    <textFieldExpression><![CDATA["หมู่ : "+$F{address.mhu}]]></textFieldExpression>
+                </textField>
+                <textField>
+                    <reportElement mode="Opaque" x="92" y="40" width="93" height="15" uuid="0c430603-e7ef-4db4-ad5a-7aad73f53e30">
+                        <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                    </reportElement>
+                    <textElement verticalAlignment="Middle"/>
+                    <textFieldExpression><![CDATA["ซอย : "+$F{address.soi}]]></textFieldExpression>
+                </textField>
+                <textField>
+                    <reportElement mode="Opaque" x="185" y="40" width="185" height="15" uuid="be2b8ebc-7a27-4915-aec6-c1a0bb1964a7">
+                        <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                    </reportElement>
+                    <textElement verticalAlignment="Middle"/>
+                    <textFieldExpression><![CDATA["ถนน : "+$F{address.road}]]></textFieldExpression>
+                </textField>
+                <textField>
+                    <reportElement mode="Opaque" x="370" y="40" width="185" height="15" uuid="4b7893e8-e2d0-41b8-9c06-8a6dc2ab7420">
+                        <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                    </reportElement>
+                    <textElement verticalAlignment="Middle"/>
+                    <textFieldExpression><![CDATA["แขวง/ตำบล: "+$F{address.subDistrict}]]></textFieldExpression>
+                </textField>
+                <textField>
+                    <reportElement mode="Opaque" x="0" y="55" width="184" height="15" uuid="cbfd4b52-357c-4813-b95d-bc73c26b73a9">
+                        <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                    </reportElement>
+                    <textElement verticalAlignment="Middle"/>
+                    <textFieldExpression><![CDATA["เขต/อำเภอ : "+$F{address.district}]]></textFieldExpression>
+                </textField>
+                <textField>
+                    <reportElement mode="Opaque" x="185" y="55" width="185" height="15" uuid="908b1d40-102f-48f2-9b91-85ade64da881">
+                        <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                    </reportElement>
+                    <textElement verticalAlignment="Middle"/>
+                    <textFieldExpression><![CDATA["จังหวัด : "+$F{address.province}]]></textFieldExpression>
+                </textField>
+                <textField>
+                    <reportElement mode="Opaque" x="370" y="55" width="185" height="15" uuid="c19bdb5e-2a4c-4ba7-8c69-303202d7619b">
+                        <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                    </reportElement>
+                    <textElement verticalAlignment="Middle"/>
+                    <textFieldExpression><![CDATA["รหัสไปรษณีย์ : "+$F{address.zipCode}]]></textFieldExpression>
+                </textField>
+                <textField>
+                    <reportElement mode="Opaque" x="0" y="70" width="184" height="15" uuid="f06dfb98-30df-4506-a641-ad39a080ee17">
+                        <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                    </reportElement>
+                    <textElement verticalAlignment="Middle"/>
+                    <textFieldExpression><![CDATA["โทรศัพท์บ้าน : "+$F{phone}]]></textFieldExpression>
+                </textField>
+                <textField>
+                    <reportElement mode="Opaque" x="185" y="70" width="185" height="15" uuid="5774d231-96f8-4fb1-b4c2-f36d02d632b6">
+                        <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                    </reportElement>
+                    <textElement verticalAlignment="Middle"/>
+                    <textFieldExpression><![CDATA["เบอร์มือถือ : "+$F{mobile}]]></textFieldExpression>
+                </textField>
+                <textField>
+                    <reportElement mode="Opaque" x="370" y="70" width="185" height="15" uuid="a62dd8a0-e665-44d7-9ef6-6c1db040b01e">
+                        <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                        <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                    </reportElement>
+                    <textElement verticalAlignment="Middle"/>
+                    <textFieldExpression><![CDATA["E-mail : "+$F{email}]]></textFieldExpression>
+                </textField>
+            </frame>
+        </band>
+    </detail>
+    <columnFooter>
+        <band height="58" splitType="Stretch"/>
+    </columnFooter>
+    <pageFooter>
+        <band height="62" splitType="Stretch"/>
+    </pageFooter>
+    <summary>
+        <band height="54" splitType="Stretch"/>
+    </summary>
+</jasperReport>
